@@ -1,5 +1,6 @@
 ---
-title: "My Storyboard at DACSS - tabs"
+title: "Connor Skowyra's HW 1 Dashboard"
+bibliography: UMASS Data Visualization.bib
 output: 
   flexdashboard::flex_dashboard
 ---
@@ -10,46 +11,50 @@ library(flexdashboard) # always
 
 <!-- links -->
 ```{r}
-map1link=
+map1link="https://github.com/dvis690-cs/hw_test/raw/main/del1Draft.rds"
 viz1=url(map1link)
 
-map2link=
+map2link="https://github.com/dvis690-cs/hw_test/raw/main/del2Draft.rds"
 viz2=url(map2link)
+
+map3link="https://github.com/dvis690-cs/hw_test/raw/main/del3Draft.rds"
+viz3=url(map3link)
+
+map4link="https://github.com/dvis690-cs/hw_test/raw/main/del4Draft.rds"
+viz4=url(map4link)
 ```
 
-## Sidebar {.sidebar}
+## Introduction
 
-
-I can give some textual explanation here!
-
+Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @aden-buie_flexdashboard_2026.
 
 ## Column {.tabset .tabset-fade}
 
 
-### GIVE ME A TITLE 1
+### Bar Chart for WA Lunches
 
 ```{r}
 readRDS(viz1)
 ```
 
 
-### GIVE ME A TITLE 2
+### Histogram for WA Lunches
 
 ```{r}
 readRDS(viz2)
 ```
 
-### GIVE ME A TITLE 3
+### Scatterplot for WA Lunches
 
 ```{r}
-readRDS(viz1)
+readRDS(viz3)
 ```
 
 
-### GIVE ME A TITLE 4
+### County Map for WA Lunches
 
 ```{r}
-readRDS(viz2)
+readRDS(viz4)
 ```
 
 
